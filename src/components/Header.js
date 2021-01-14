@@ -2,10 +2,10 @@ import React from 'react';
 
 const Header = () => (
   <div className="header">
-    <ul>
+    <ul className="list-center">
       <li>Main</li>
-      <li>About</li>
       <li>Portfolio</li>
+      <li>About</li>
       <li>Contact</li>
     </ul>
   </div>

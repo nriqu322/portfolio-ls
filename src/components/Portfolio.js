@@ -5,9 +5,9 @@ import {
 import defaultImage from '../assets/images/default-image.jpg';
 
 const Portfolio = () => (
-  <div>
+  <div className="my-5">
     <h1>My Recent Work</h1>
-    <Container className="portfolio-cards">
+    <Container className="portfolio-cards mb-5">
       <Row className="card-container-row">
         <Card className="card-container" style={{ width: '320px', height: '411px' }}>
           <Card.Img variant="top" src={defaultImage} style={{ height: '236px' }} />
@@ -72,8 +72,6 @@ const Portfolio = () => (
             <Button className="mt-2" href="#" variant="success">See Details</Button>
           </Card.Body>
         </Card>
-        {/* </Row> */}
-        {/* <Row> */}
         <Card className="card-container" style={{ width: '320px', height: '411px' }}>
           <Card.Img variant="top" src={defaultImage} style={{ height: '236px' }} />
           <Card.Body>

@@ -9,8 +9,9 @@ const Main = () => (
     <h1 className="intro-name">Hello, I&apos;m Luis Saavedra</h1>
     <h2 className="intro-work">I&apos;m a Full-Stack Developer</h2>
     <p className="intro-info">
-      I can help you build a product, feature or website. Look through some of my projects.
-      Feel free to contact me if you need a reliable person and a team worker.
+      I can help you build a product, feature or website. Look through some of my projects,
+      if you like what you see feel free to contact me. I&apos;m a reliable person and
+      a team worker.
     </p>
     <div className="main-social-media">
       <ul className="list-center">

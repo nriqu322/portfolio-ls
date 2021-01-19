@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600&display=swap');
-/* font-family: 'Poppins', sans-serif; */
 
 * {
   box-sizing: border-box;
@@ -20,6 +19,7 @@
   height: 60px;
   font-size: 14px;
   font-weight: 500;
+  z-index: 999;
 }
 
 ul {
@@ -93,6 +93,18 @@ ul.list-center li {
  font-size: 12px;
  font-weight: 600;
  border-radius: 4px;
+}
+
+.intro-info {
+  font-size: 18px;
+  font-weight: 400;
+  color: #42526E;
+  max-width: 750px;
+  margin: 10px auto;
+}
+
+.get-gray {
+  background-color: #EBF0EE;;
 }
 
 @media (max-width: 767px) {

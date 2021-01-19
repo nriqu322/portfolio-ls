@@ -5,7 +5,7 @@ import {
 import defaultImage from '../assets/images/default-image.jpg';
 
 const Portfolio = () => (
-  <div className="my-5">
+  <div>
     <h1>My Recent Work</h1>
     <Container className="portfolio-cards mb-5">
       <Row className="card-container-row">
@@ -27,7 +27,7 @@ const Portfolio = () => (
                 Netlify
               </Card.Text>
             </div>
-            <Button className="mt-2" href="#" variant="success">See Details</Button>
+            <Button className="details-btn mt-2" href="#" variant="success">See Details</Button>
           </Card.Body>
         </Card>
         <Card className="card-container" style={{ width: '320px', height: '411px' }}>
@@ -48,7 +48,7 @@ const Portfolio = () => (
                 Netlify
               </Card.Text>
             </div>
-            <Button className="mt-2" href="#" variant="success">See Details</Button>
+            <Button className="details-btn mt-2" href="#" variant="success">See Details</Button>
           </Card.Body>
         </Card>
         <Card className="card-container" style={{ width: '320px', height: '411px' }}>
@@ -69,7 +69,7 @@ const Portfolio = () => (
                 Netlify
               </Card.Text>
             </div>
-            <Button className="mt-2" href="#" variant="success">See Details</Button>
+            <Button className="details-btn mt-2" href="#" variant="success">See Details</Button>
           </Card.Body>
         </Card>
         <Card className="card-container" style={{ width: '320px', height: '411px' }}>
@@ -90,7 +90,7 @@ const Portfolio = () => (
                 Netlify
               </Card.Text>
             </div>
-            <Button className="mt-2" href="#" variant="success">See Details</Button>
+            <Button className="details-btn mt-2" href="#" variant="success">See Details</Button>
           </Card.Body>
         </Card>
         <Card className="card-container" style={{ width: '320px', height: '411px' }}>
@@ -111,7 +111,7 @@ const Portfolio = () => (
                 Netlify
               </Card.Text>
             </div>
-            <Button className="mt-2" href="#" variant="success">See Details</Button>
+            <Button className="details-btn mt-2" href="#" variant="success">See Details</Button>
           </Card.Body>
         </Card>
         <Card className="card-container" style={{ width: '320px', height: '411px' }}>
@@ -132,7 +132,7 @@ const Portfolio = () => (
                 Netlify
               </Card.Text>
             </div>
-            <Button className="mt-2" href="#" variant="success">See Details</Button>
+            <Button className="details-btn mt-2" href="#" variant="success">See Details</Button>
           </Card.Body>
         </Card>
       </Row>

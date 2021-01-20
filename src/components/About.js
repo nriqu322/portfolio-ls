@@ -10,7 +10,7 @@ import resume from '../assets/resume.pdf';
 const About = () => (
   <div className="mb-5">
     <div>
-      <h1>About me</h1>
+      <h1 className="section-title">About me</h1>
       <p className="intro-info">
         I can help you build a product, feature or website. Look through some of my projects,
         if you like what you see feel free to contact me. I&apos;m a reliable person and

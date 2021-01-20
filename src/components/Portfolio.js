@@ -6,7 +6,7 @@ import defaultImage from '../assets/images/default-image.jpg';
 
 const Portfolio = () => (
   <div>
-    <h1>My Recent Work</h1>
+    <h1 className="section-title">My Recent Work</h1>
     <Container className="portfolio-cards mb-5">
       <Row className="card-container-row">
         <Card className="card-container" style={{ width: '320px', height: '411px' }}>

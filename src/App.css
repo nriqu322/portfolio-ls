@@ -135,6 +135,42 @@ ul.list-center li {
   border-radius: 6px;
  }
 
+ .about-container {
+   max-width: 1110px;
+   margin: 50px auto;
+ }
+
+ .about-info {
+   font-size: 24px;
+   font-weight: 600;
+   line-height: 32px;
+   color: #344563;
+   width: 70%;
+ }
+
+ .section-title {
+   font-weight: bold;
+   line-height: 52px;
+   color: #172B4D;
+ }
+
+ .contact-form {
+   margin: 0 15px;
+ }
+
+ .about-input {
+   border: 1px solid #D0D9D4;
+   border-radius: 4px;
+   height: 36px;
+   color: #6B778C;
+   font-size: 12px;
+ }
+
+ .contact-form textarea {
+   height: 80px;
+   padding-top: 8px;
+ }
+
 @media (max-width: 767px) {
   .card-container-row {
     display: flex;

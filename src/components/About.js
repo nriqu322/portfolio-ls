@@ -6,11 +6,13 @@ import frameworksIcon from '../assets/icons/frameworks-icon.png';
 import languagesIcon from '../assets/icons/languages-icon.png';
 import skillsIcon from '../assets/icons/skills-icon.png';
 import resume from '../assets/resume.pdf';
+import luisSaavedra from '../assets/images/luis-saavedra.jpeg';
 
 const About = () => (
   <div className="mb-5">
     <div>
       <h1 className="section-title">About me</h1>
+      <img className="my-photo" src={luisSaavedra} alt="Luis Saavedra" />
       <p className="intro-info">
         I can help you build a product, feature or website. Look through some of my projects,
         if you like what you see feel free to contact me. I&apos;m a reliable person and

@@ -3,11 +3,10 @@ import PropTypes from 'prop-types';
 import { Modal, Button, Card } from 'react-bootstrap';
 import liveDemo from '../assets/icons/live-demo.svg';
 import github from '../assets/icons/github.svg';
-import defaultImg from '../assets/images/default-image.jpg';
 
 const ShowModal = props => {
   const {
-    show, onHide, title, description, liveDemoLink, githubLink, stackList, id,
+    show, onHide, title, description, liveDemoLink, githubLink, stackList, id, img,
   } = props;
 
   return (
@@ -23,7 +22,7 @@ const ShowModal = props => {
           Modal heading
         </Modal.Title> */}
       </Modal.Header>
-      <img className="details-img" src={defaultImg} alt="main" />
+      <img className="details-img" src={img} alt="main" />
       <div className="details-container">
         <Modal.Body>
           <h4 className="details-title my-3">{title}</h4>
@@ -31,30 +30,15 @@ const ShowModal = props => {
             {
               stackList && stackList.map(stack => <Card.Text className="card-stack mr-2" key={id}>{stack}</Card.Text>)
             }
-            {/* <Card.Text className="card-stack mr-2">
-              {stack[0]}
-            </Card.Text>
-            <Card.Text className="card-stack mr-2">
-              {stack[1]}
-            </Card.Text>
-            <Card.Text className="card-stack mr-2">
-              {stack[2]}
-            </Card.Text>
-            <Card.Text className="card-stack">
-              {stack[3]}
-            </Card.Text>
-            <Card.Text className="card-stack">
-              {stack[4]}
-            </Card.Text> */}
           </div>
-          <p className="mt-2">{description}</p>
+          <p className="modal-description mt-2">{description}</p>
         </Modal.Body>
         <Modal.Footer>
-          <Button href={liveDemoLink} variant="success">
+          <Button href={liveDemoLink} target="_blank" variant="success">
             <span>See Live</span>
             <img src={liveDemo} alt="live-demo" />
           </Button>
-          <Button href={githubLink} variant="success">
+          <Button href={githubLink} target="_blank" variant="success">
             <span>See Source</span>
             <img src={github} alt="github-icon" />
           </Button>
@@ -73,6 +57,7 @@ ShowModal.propTypes = {
   githubLink: PropTypes.string.isRequired,
   stackList: PropTypes.arrayOf(String).isRequired,
   id: PropTypes.number.isRequired,
+  img: PropTypes.objectOf(String).isRequired,
 };
 
 ShowModal.defaultProps = {

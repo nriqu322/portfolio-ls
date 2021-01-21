@@ -8,17 +8,17 @@ const Footer = () => (
   <div className="footer">
     <ul className="list-center">
       <li>
-        <a href="https://github.com/nriqu322/">
+        <a href="https://github.com/nriqu322/" target="_blank" rel="noreferrer">
           <img src={github} alt="github" />
         </a>
       </li>
       <li>
-        <a href="https://github.com/nriqu322/">
+        <a href="https://www.linkedin.com/in/luis-saavedra-sanchez/" target="_blank" rel="noreferrer">
           <img src={linkedin} alt="linkedin" />
         </a>
       </li>
       <li>
-        <a href="https://twitter.com/nriqu322/">
+        <a href="https://twitter.com/nriqu322/" target="_blank" rel="noreferrer">
           <img src={twitter} alt="twitter" />
         </a>
       </li>

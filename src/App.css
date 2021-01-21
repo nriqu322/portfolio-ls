@@ -82,6 +82,14 @@ ul.list-center li {
   justify-content: space-evenly;
 }
 
+.card-stack {
+  background-color: #EBF0EE;
+  padding: 6px 10px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 4px;
+ }
+
 .card-container-row {
   display: flex;
   justify-content: space-around;
@@ -96,14 +104,6 @@ ul.list-center li {
 
 .card-text:last-child {
   margin-bottom: 16px;
-}
-
-.card-stack {
- background-color: #EBF0EE;
- padding: 6px 10px;
- font-size: 11px;
- font-weight: 600;
- border-radius: 4px;
 }
 
 .details-btn {
@@ -133,43 +133,97 @@ ul.list-center li {
   height: 28px;
   margin: 3px 1px;
   border-radius: 6px;
- }
+}
 
- .about-container {
-   max-width: 1110px;
-   margin: 50px auto;
- }
+.about-container {
+  max-width: 1110px;
+  margin: 50px auto;
+}
 
- .about-info {
-   font-size: 24px;
-   font-weight: 600;
-   line-height: 32px;
-   color: #344563;
-   width: 70%;
- }
+.about-info {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #344563;
+  width: 70%;
+}
 
- .section-title {
-   font-weight: bold;
-   line-height: 52px;
-   color: #172B4D;
- }
+.section-title {
+  font-weight: bold;
+  line-height: 52px;
+  color: #172B4D;
+}
 
- .contact-form {
-   margin: 0 15px;
- }
+.contact-form {
+  margin: 0 15px;
+}
 
- .about-input {
-   border: 1px solid #D0D9D4;
-   border-radius: 4px;
-   height: 36px;
-   color: #6B778C;
-   font-size: 12px;
- }
+.about-input {
+  border: 1px solid #D0D9D4;
+  border-radius: 4px;
+  height: 36px;
+  color: #6B778C;
+  font-size: 12px;
+}
 
- .contact-form textarea {
-   height: 80px;
-   padding-top: 8px;
- }
+.contact-form textarea {
+  height: 80px;
+  padding-top: 8px;
+}
+
+.details-img {
+  width: 96%;
+  height: calc(100vh*0.55);
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.close span {
+  background: #EBECF0;
+  border-radius: 8px;
+  padding: 2px 8px;
+}
+
+.details-title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 44px;
+  color: #172B4D;
+}
+
+.modal-body {
+  padding: 0 1rem;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-content {
+  border-radius: 8px;
+}
+
+.modal-footer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top: none;
+}
+
+.details-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.modal-footer > * {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+body.modal-open > :not(.modal) {
+  filter: blur(5px);
+}
 
 @media (max-width: 767px) {
   .card-container-row {

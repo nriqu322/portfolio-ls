@@ -41,9 +41,19 @@ ul {
   margin-bottom: 0;
 }
 
+a {
+  color: #172b4d;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .scroll {
-  /* background-color: rgb(112, 190, 114); */
   background-color: #36b37e;
+}
+
+.scroll a {
   color: #fff;
 }
 
@@ -263,6 +273,10 @@ ul.list-center li {
 
 body.modal-open > :not(.modal) {
   filter: blur(5px);
+}
+
+.top-space {
+  padding-top: 70px;
 }
 
 @media (max-width: 767px) {

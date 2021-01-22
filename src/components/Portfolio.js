@@ -42,7 +42,7 @@ const Portfolio = () => {
     },
   ];
   return (
-    <div>
+    <div className="top-space" id="portfolio">
       <h1 className="section-title">My Recent Work</h1>
       <Container className="portfolio-cards mb-5">
         <Row className="card-container-row">

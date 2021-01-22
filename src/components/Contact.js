@@ -34,7 +34,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <h1 className="section-title">Contact Me</h1>
+      <h1 className="section-title top-space" id="contact">Contact Me</h1>
       <div className="about-container d-md-flex justify-content-between">
         <div className="about-info mx-auto">
           I&apos;m always Interested in hearing about new projects,

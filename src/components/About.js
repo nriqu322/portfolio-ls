@@ -9,7 +9,7 @@ import resume from '../assets/resume.pdf';
 import luisSaavedra from '../assets/images/luis-saavedra.jpeg';
 
 const About = () => (
-  <div className="mb-5">
+  <div className="top-space mb-5" id="about">
     <div>
       <h1 className="section-title">About me</h1>
       <img className="my-photo" src={luisSaavedra} alt="Luis Saavedra" />

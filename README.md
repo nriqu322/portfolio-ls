@@ -4,7 +4,7 @@ This is my portfolio to show the main project I worked on and collaborate in.
 
 ## Live Version
 
-* [See my Portfolio here](https://nriqu322.github.io/portfolio-ls/)
+* [See my Portfolio here](https://www.luissaavedra.net)
 
 ## Build with
 * [Create React App](https://github.com/facebook/create-react-app)

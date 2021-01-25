@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600&display=swap');
+/* color: #1F6145; */
+/* background-color: #36b37e; */
 
 * {
   box-sizing: border-box;
@@ -30,7 +32,7 @@
 }
 
 .intro-work {
-  color: #36b37f;
+  color: #1F6145;
 }
 
 ul {
@@ -127,13 +129,13 @@ ul.list-center li {
 }
 
 .details-btn {
-  background-color: #36b37e;
-  border-color: #36b37e;
+  background-color: #1F6145;
+  border-color: #1F6145;
 }
 
 .portfolio-btn {
-  background-color: #36b37e;
-  border-color: #36b37e;
+  background-color: #1F6145;
+  border-color: #1F6145;
   font-size: 14px;
   padding: 5px 10px;
 }
@@ -162,7 +164,7 @@ ul.list-center li {
 
 .card-about {
   background-color: #fff;
-  color: #36b37e;
+  color: #1F6145;
   padding: 6px 10px;
   font-size: 11px;
   font-weight: 600;

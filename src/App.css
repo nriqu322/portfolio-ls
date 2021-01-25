@@ -309,3 +309,14 @@ body.modal-open > :not(.modal) {
     margin-bottom: 0;
   }
 }
+
+@media (max-width: 425px) {
+  .main-social-media ul {
+    margin-bottom: 90px;
+  }
+
+  .intro-name,
+  .intro-work {
+    font-size: 40px;
+  }
+}

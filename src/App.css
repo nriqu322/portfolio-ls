@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600&display=swap');
-/* color: #1F6145; */
-/* background-color: #36b37e; */
 
 * {
   box-sizing: border-box;
@@ -32,7 +30,7 @@
 }
 
 .intro-work {
-  color: #1F6145;
+  color: #1f6145;
 }
 
 ul {
@@ -129,13 +127,14 @@ ul.list-center li {
 }
 
 .details-btn {
-  background-color: #1F6145;
-  border-color: #1F6145;
+  font-size: 14px;
+  background-color: #1f6145;
+  border-color: #1f6145;
 }
 
 .portfolio-btn {
-  background-color: #1F6145;
-  border-color: #1F6145;
+  background-color: #1f6145;
+  border-color: #1f6145;
   font-size: 14px;
   padding: 5px 10px;
 }
@@ -158,13 +157,23 @@ ul.list-center li {
   background-color: #ebf0ee;
 }
 
+.card-img-container {
+  width: 100%;
+  background-color: #1f6145;
+}
+
 .card-img-top {
   border: 1px solid #ebf0ee;
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
 }
 
 .card-about {
   background-color: #fff;
-  color: #1F6145;
+  color: #1f6145;
   padding: 6px 10px;
   font-size: 11px;
   font-weight: 600;
@@ -216,10 +225,17 @@ ul.list-center li {
   padding-top: 8px;
 }
 
-.details-img {
+.details-img-container {
   width: 96%;
   height: calc(100vh * 0.55);
   margin: 0 auto;
+}
+
+.details-img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
   border-radius: 8px;
 }
 
@@ -247,6 +263,7 @@ ul.list-center li {
 
 .modal-header {
   border-bottom: none;
+  padding: 10px;
 }
 
 .modal-content {
@@ -269,8 +286,8 @@ ul.list-center li {
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
-  background-color: #36b37f;
-  border-color: #36b37f;
+  background-color: #1f6145;
+  border-color: #1f6145;
 }
 
 body.modal-open > :not(.modal) {

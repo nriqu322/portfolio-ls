@@ -1,23 +1,33 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { Card, Button } from 'react-bootstrap';
-import { setModal } from '../actions/index';
+import { setCurrentCard, setModal } from '../actions/index';
+// import ShowModal from './Details';
 // import liveDemo from '../assets/icons/live-demo.svg';
 // import github from '../assets/icons/github.svg';
 
 const PortfolioCard = props => {
   const {
-    title, sourceImg, stackList,
+    title, sourceImg, stackList, card,
   } = props;
+  const currentCard = useSelector(state => state.currentCard.currentCard);
   const dispatch = useDispatch();
+
   const handleClick = () => {
-    dispatch(setModal(true));
+    if (card !== currentCard) {
+      dispatch(setCurrentCard(card));
+      dispatch(setModal(true));
+    } else {
+      dispatch(setModal(true));
+    }
   };
 
   return (
     <Card className="card-container" style={{ width: '320px', height: '411px' }}>
-      <Card.Img variant="top" src={sourceImg} style={{ height: '236px' }} />
+      <div className="card-img-container">
+        <Card.Img variant="top" src={sourceImg} style={{ height: '236px' }} />
+      </div>
       <Card.Body>
         <Card.Title className="card-title">{title}</Card.Title>
         <div className="d-flex card-stack-container">
@@ -78,6 +88,7 @@ PortfolioCard.propTypes = {
   // githubLink: PropTypes.string.isRequired,
   sourceImg: PropTypes.string.isRequired,
   stackList: PropTypes.instanceOf(Array).isRequired,
+  card: PropTypes.objectOf(PropTypes.any).isRequired,
 };
 
 export default PortfolioCard;

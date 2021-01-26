@@ -2,6 +2,7 @@ import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import PortfolioCard from './PortfolioCard';
 import portfolioInfo from '../assets/portfolioInfo';
+import ShowModal from './Details';
 
 const Portfolio = () => (
   <div className="top-space" id="portfolio">
@@ -16,10 +17,12 @@ const Portfolio = () => (
             liveDemoLink={card.liveDemo}
             githubLink={card.githubLink}
             stackList={card.stack}
+            card={card}
           />
         ))}
       </Row>
     </Container>
+    <ShowModal />
   </div>
 );
 

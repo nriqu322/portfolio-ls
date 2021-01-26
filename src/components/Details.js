@@ -1,5 +1,4 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import { Modal, Button, Card } from 'react-bootstrap';
 import { setModal } from '../actions/index';
@@ -10,9 +9,6 @@ const ShowModal = () => {
   const modal = useSelector(state => state.modal.modal);
   const currentCard = useSelector(state => state.currentCard.currentCard);
   const dispatch = useDispatch();
-  // const {
-  //   title, description, liveDemoLink, githubLink, stackList, id, img,
-  // } = props;
 
   const handleCancel = () => {
     dispatch(setModal(false));
@@ -62,21 +58,5 @@ const ShowModal = () => {
     </Modal>
   );
 };
-
-// ShowModal.propTypes = {
-//   show: PropTypes.bool.isRequired,
-//   onHide: PropTypes.func.isRequired,
-//   title: PropTypes.string.isRequired,
-//   description: PropTypes.string.isRequired,
-//   liveDemoLink: PropTypes.string,
-//   githubLink: PropTypes.string.isRequired,
-//   stackList: PropTypes.arrayOf(String).isRequired,
-//   id: PropTypes.number.isRequired,
-//   img: PropTypes.objectOf(String).isRequired,
-// };
-
-// ShowModal.defaultProps = {
-//   liveDemoLink: '',
-// };
 
 export default ShowModal;

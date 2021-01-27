@@ -9,7 +9,7 @@ const portfolioInfo = [
   {
     title: 'English Wise',
     id: 101,
-    stack: ['React JS', 'Redux', 'Ruby on Rails', 'Netlify'],
+    stack: ['React JS', 'Redux', 'RoR', 'Netlify'],
     stackDetails: [['React JS', 1011], ['Redux', 1012], ['Ruby on Rails', 1013], ['Netlify', 1014], ['Jest and Enzyme', 1015]],
     description: 'English wise is an appoinment app to schedule a meeting with an english teacher. You have to be logged in to see the teachers available schedule and your own schedule. I use the React library to display the information required and Redux to manage the state of the app.',
     src: englishWise,

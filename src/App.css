@@ -275,6 +275,7 @@ ul.list-center li {
   top: 0;
   right: 0;
   border-top: none;
+  padding: 0 0.75rem 0 0;
 }
 
 .details-container {
@@ -305,10 +306,14 @@ body.modal-open > :not(.modal) {
   }
 }
 
-@media (max-width: 502px) {
-  .details-img {
+@media (max-width: 510px) {
+  .details-img-container {
     width: 96%;
     height: calc(100vh * 0.37);
+    margin: 0 auto;
+  }
+  
+  .details-img {
     margin: 16px auto;
   }
 
@@ -316,6 +321,7 @@ body.modal-open > :not(.modal) {
     position: relative;
     display: flex;
     justify-content: center;
+    padding: 0 0.75rem 0.75rem;
   }
 
   .modal-header {
@@ -337,5 +343,9 @@ body.modal-open > :not(.modal) {
   .intro-name,
   .intro-work {
     font-size: 40px;
+  }
+
+  ul {
+    height: 45px;
   }
 }
